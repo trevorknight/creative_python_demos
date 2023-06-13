@@ -6,7 +6,6 @@ output port.  Just having Logic open, it picks up those MIDI events.
 
 """
 
-import random
 import time
 
 import mido
