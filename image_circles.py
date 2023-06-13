@@ -10,12 +10,12 @@ from enum import Enum
 from math import sqrt
 
 import numpy as np
-from PIL import Image, ImageDraw, ImageOps
+from PIL import Image, ImageDraw
 
 # Constants
-MIN_DISTANCE = 10
-MIN_SIZE = 5
-MAX_SIZE = 30
+MIN_DISTANCE = 1
+MIN_SIZE = 1
+MAX_SIZE = 10
 # Relevant only for randomly placed circles.  In practice, this is
 # the number of attempted circles, as circles closer than MIN_DISTANCE
 # will be rejected.
@@ -83,13 +83,13 @@ def draw_circles(img, circles):
 
 
 def main(type: Type, input_path, output_path):
-    source_image = Image.open(input_path).convert("RGB")
-    output_image = Image.new("RGB", source_image.size, "black")
+    source_image = None
+    with Image.open(input_path) as source:
+        source_image = source.convert("L")  # "L" converts to grayscale
 
     width, height = source_image.size
-    source_grayscale = source_image.convert("L")
-    # Brightness to a [0, 1] scale.
-    source_brightness = np.array(source_grayscale) / 255
+    # Create brightness on a [0, 1] scale.
+    source_brightness = np.array(source_image) / 255
 
     circles: list[Circle] = []
     if type == Type.RANDOM:
@@ -98,10 +98,12 @@ def main(type: Type, input_path, output_path):
         circles = generate_circles_grid(
             width, height, source_brightness, MAX_SIZE + MIN_DISTANCE
         )
+    # I'm curious how many circles we actually get (especially for the random method).
     print(f"Total circles: {len(circles)}")
-    draw_circles(output_image, circles)
 
-    output_image.save(output_path)
+    with Image.new("RGB", source_image.size, "black") as output_image:
+        draw_circles(output_image, circles)
+        output_image.save(output_path)
 
 
 if __name__ == "__main__":
