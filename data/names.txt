@@ -38,6 +38,7 @@ Agustus
 Aileen
 Aimee
 Al
+Alan
 Alba
 Albert
 Alberta
@@ -112,6 +113,7 @@ Andy
 Angela
 Angelina
 Angeline
+Angelo
 Angie
 Angus
 Anita
@@ -141,6 +143,7 @@ Ardelia
 Ardella
 Arie
 Arizona
+Arlene
 Arlie
 Arlington
 Armand
@@ -161,6 +164,7 @@ Ashby
 Asher
 Ashley
 Aubrey
+Audrey
 August
 Augusta
 Augustin
@@ -224,6 +228,7 @@ Bess
 Besse
 Bessie
 Betsy
+Bette
 Bettie
 Betty
 Beulah
@@ -242,6 +247,7 @@ Blanch
 Blanche
 Blas
 Bob
+Bobby
 Bonnie
 Boston
 Boyd
@@ -407,6 +413,7 @@ Cyrus
 Daisey
 Daisie
 Daisy
+Dale
 Dallas
 Damon
 Dan
@@ -431,6 +438,7 @@ Dell
 Della
 Dellar
 Delmar
+Delores
 Delos
 Delphia
 Delphine
@@ -441,6 +449,7 @@ Dennis
 Denver
 Dessa
 Dessie
+Dewey
 Dewitt
 Dexter
 Diana
@@ -481,6 +490,7 @@ Dow
 Drew
 Drucilla
 Drusilla
+Duane
 Dudley
 Duff
 Duke
@@ -513,6 +523,7 @@ Edythe
 Effa
 Effie
 Egbert
+Eileen
 Elaine
 Elam
 Elbert
@@ -737,6 +748,7 @@ Gladys
 Glen
 Glenn
 Glenna
+Gloria
 Godfrey
 Golda
 Golden
@@ -910,11 +922,13 @@ Jabez
 Jack
 Jackson
 Jacob
+Jacqueline
 Jake
 James
 Jane
 Janet
 Janette
+Janice
 Janie
 Jannie
 Jarrett
@@ -944,6 +958,7 @@ Jewel
 Jewell
 Jim
 Jimmie
+Jimmy
 Joan
 Joanna
 Jodie
@@ -972,6 +987,7 @@ Josiah
 Josie
 Josiephine
 Jossie
+Joyce
 Juan
 Juana
 Juanita
@@ -989,6 +1005,7 @@ Julious
 Julius
 June
 Junie
+Junior
 Junious
 Junius
 Justice
@@ -1006,6 +1023,7 @@ Kathryne
 Katie
 Kattie
 Katy
+Keith
 Kelly
 Kenneth
 King
@@ -1027,6 +1045,7 @@ Laurence
 Lauretta
 Lavenia
 Lavern
+Laverne
 Lavina
 Lavinia
 Lavonia
@@ -1127,6 +1146,7 @@ Lorena
 Lorene
 Lorenzo
 Loretta
+Lorraine
 Lotta
 Lottie
 Lou
@@ -1142,6 +1162,7 @@ Love
 Lovie
 Lovina
 Lovisa
+Lowell
 Loyd
 Lucia
 Lucian
@@ -1237,6 +1258,7 @@ Marian
 Marie
 Marietta
 Marilla
+Marilyn
 Marion
 Marjorie
 Mark
@@ -1267,6 +1289,7 @@ Maude
 Maudie
 Maurice
 Max
+Maxine
 Maxwell
 May
 Maybelle
@@ -1458,6 +1481,7 @@ Parley
 Parthenia
 Pat
 Patience
+Patricia
 Patrick
 Patsy
 Pattie
@@ -1555,6 +1579,8 @@ Rolland
 Rollie
 Rollin
 Romeo
+Ronald
+Roosevelt
 Rosa
 Rosalee
 Rosalia
@@ -1564,6 +1590,7 @@ Roscoe
 Rose
 Roseanna
 Rosella
+Rosemary
 Rosetta
 Rosia
 Rosie
@@ -1595,6 +1622,7 @@ Sallie
 Sally
 Salome
 Salomon
+Salvatore
 Sam
 Samantha
 Sammie
@@ -1811,6 +1839,7 @@ Winnifred
 Winona
 Wm
 Wong
+Woodrow
 Woodson
 Worth
 Wyatt
