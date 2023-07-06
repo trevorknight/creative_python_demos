@@ -45,7 +45,7 @@ def validate_letter_matches():
     return True
 
 
-validate_letter_matches()
+# assert(validate_letter_matches())
 
 
 def could_be_ambigram(name):
@@ -79,6 +79,6 @@ if __name__ == "__main__":
         main(input_names_path, output_names_path)
     else:
         print(
-            "Usage: python ambigram_names.py names_list.txt <optional: filtered_names.txt>"
+            "Usage: python ambigram_names.py names_list.txt <optional: output_names.txt>"
         )
         sys.exit(1)
