@@ -1,5 +1,8 @@
 """ Based on a source image, create a new image with a black background and white circles
 
+The circles are either randomly placed or placed in a grid pattern.  Their size is proportional
+to the brightness at their location.
+
 Usage: python3 circle_image.py <random or grid> <input_image_path> <output_image_path>
 """
 
