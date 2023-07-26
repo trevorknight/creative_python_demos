@@ -42,15 +42,14 @@ MAX_SIZE = 10
 
 
 
-## Image Clustering
+## Image Color Clustering
 
 For this one, the idea is to reproduce an image using only *k* colors using *k*-means clustering.
-That is to say, use the RGB value of each pixel as a 3D position in space and cluster all pixels,
-iteratively updating as normal.  Note the x,y position of the pixel is not considered but
+That is to say, use the RGB value of each pixel as a 3D vector and cluster all pixels, iteratively
+updating as normal.  Note the (x, y) position of the pixel is not considered but
 neighbouring pixels tend to end up in the same cluster.
 
-Sort of inspired by Shepard Fairey's famous
-Obama picture.
+Sort of inspired by Shepard Fairey's famous Obama picture.
 
 Forest picture with 12 clusters:
 
@@ -107,3 +106,35 @@ Wm
 TODO: Sketch an example of the output.
 
 
+## Anagram Names
+
+Using the same set of names, this script finds sets of anagrams.  It's pretty simple; not nearly as
+interesting as I'd hoped.  Maybe future work could be finding anagrams from pairs of names or making
+a set of less common names.  
+
+Largest set of names:
+
+```text
+Aden Dean Dena Edna
+```
+
+Longest names:
+
+```
+Christian Christina
+Benjamin Benjiman
+Caroline Cornelia
+Cristian Cristina
+Dorothea Theodora
+Katheryn Kathryne
+```
+
+I guess the most popular names just tend to be highly similar and just letter swapped variations of
+each other.
+
+
+**Usage**
+
+```sh
+python anagram_names.py ./data/us_top_names.txt
+```
