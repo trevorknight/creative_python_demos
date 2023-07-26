@@ -2,6 +2,9 @@
 
 Takes an input file of names and outputs the ones that are potential good 
 ambigrams based on the letter matching map at the top of the file.
+
+Usage: python ambigram_names.py names_list.txt <optional: output_names.txt>
+
 """
 
 import sys
@@ -35,6 +38,7 @@ LETTER_MATCHES = {
     "z": {"z"},
 }
 
+
 def validate_letter_matches():
     """Checks that all data in the LETTER_MATCHES is symmetric."""
     for letter, matches in LETTER_MATCHES.items():
@@ -50,11 +54,9 @@ def validate_letter_matches():
 
 def could_be_ambigram(name):
     """Returns True if the name could be an ambigram."""
-    # TODO: Rewrite with `all(...)`
-    for i in range(len(name) // 2 + 1):  # +1 to include middle letter when odd
-        if name[i] not in LETTER_MATCHES[name[-(i + 1)]]:
-            return False
-    return True
+    return all(
+        name[i] in LETTER_MATCHES[name[-(i + 1)]] for i in range(len(name) // 2 + 1)
+    )
 
 
 def main(input_names_path, output_names_path=None):
@@ -66,7 +68,7 @@ def main(input_names_path, output_names_path=None):
         with open(output_names_path, "w") as output_names_file:
             output_names_file.write("\n".join(output_names))
     else:
-        print("\n".join(output_names))
+        print("".join(output_names))
 
 
 if __name__ == "__main__":

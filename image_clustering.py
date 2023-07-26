@@ -20,9 +20,7 @@ EPSILON = 0.1
 def initialize_centroids(flattened_data, k) -> np.ndarray:
     """Returns starting, empty clusters, with randomly sampled centroids."""
     # Image data shape is height, width, number of channels.
-    # print(np.random.randint(0, flattened_data.shape[0], k))
-    fixed_starting_points = [127343,  99214,  25592,  99996,  77931,  49666, 165064,  78747]
-    return flattened_data[fixed_starting_points]
+    return flattened_data[np.random.randint(0, flattened_data.shape[0], k)]
 
 
 def closest_centroid(flattened_data: np.ndarray, centroids: np.ndarray) -> np.ndarray:
@@ -42,8 +40,6 @@ def update_centroids(
         masked_data = flattened_data[centroid_assignments == i]
         new_centroids[i] = np.mean(masked_data, axis=(0))
     converged = np.all(np.linalg.norm(new_centroids - old_centroids, axis=-1) < EPSILON)
-    print(old_centroids)
-    print(new_centroids)
     return new_centroids, converged
 
 

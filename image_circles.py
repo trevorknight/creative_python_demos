@@ -3,7 +3,7 @@
 The circles are either randomly placed or placed in a grid pattern.  Their size is proportional
 to the brightness at their location.
 
-Usage: python3 circle_image.py <random or grid> <input_image_path> <output_image_path>
+Usage: python3 image_circles.py <random or grid> <input_image_path> <output_image_path>
 """
 
 
@@ -22,7 +22,7 @@ MAX_SIZE = 10
 # Relevant only for randomly placed circles.  In practice, this is
 # the number of attempted circles, as circles closer than MIN_DISTANCE
 # will be rejected.
-NUM_CIRCLES = 10000
+NUM_CIRCLES = 20000
 
 
 class Type(Enum):

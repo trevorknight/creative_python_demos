@@ -1,4 +1,7 @@
-mido==1.2.10
 numpy==1.24.2
 Pillow==9.4.0
-python-rtmidi==1.4.9
+
+# Used for the music demos and has incompatibilities with Python 3.11 as of
+# 2023-07-25.
+# mido==1.2.10
+# python-rtmidi==1.4.9
