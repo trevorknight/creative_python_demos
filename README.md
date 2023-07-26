@@ -3,6 +3,11 @@
 I created this repo as a demonstration of some creative things people could do with Python for a
 free class at the local library.
 
+Most of the code and concepts are pretty simple to be understandable to a beginning Python
+programmer.  The color clustering is the exception as it uses numpy arrays and methods.  As k-means
+is a pretty straightforward algorithm, maybe there is potential future work is to re-implement it
+with only standard library stuff.
+
 ## Image Circles
 
 For this one, the idea is to reproduce an image just using white circles on a black background.  The
